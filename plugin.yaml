@@ -1,0 +1,46 @@
+name: ECC (Everything Claude Code)
+version: "2.2.0"
+description: >
+  Comprehensive suite of agents, skills, rules, and commands for AI-driven development.
+  Includes 286+ skills, specialized agents, security rules, and RTK token optimization.
+
+type: external
+source: https://github.com/willianmendesf/code-agent-plugins-ecc
+
+directories:
+  agents:
+    - path: agents/
+      description: Specialized agents (40+)
+  skills:
+    - path: skills/
+      description: Production-ready skills (286+)
+  rules:
+    - path: rules/
+      description: Security, coding style, and architecture rules
+  commands:
+    - path: commands/
+      description: Slash commands (/tdd, /plan, /e2e, etc.)
+
+features:
+  - token-optimization: RTK (60-90% savings)
+  - security: Prompt defense, sanitization, validation
+  - testing: E2E, unit, integration testing
+  - architecture: Multi-language patterns
+  - documentation: Comprehensive guides
+
+dependencies:
+  - js-yaml
+  - node: ">=18"
+
+security:
+  prompt-defense: true
+  validated: true
+  reviewed: true
+
+integrations:
+  - gatekeeper: APPROVED
+  - value-score: "9/10"
+  - breadth: "10/10"
+  - depth: "9/10"
+  - maintenance: "8/10"
+  - alignment: "9/10"
